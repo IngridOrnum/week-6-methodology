@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition</title>
+    <style>
+        div {
+            font-size: 3rem;
+            width: 400px;
+            height: 400px;
+        }
+        
+        .first-div {
+            background-color: cadetblue;
+            color: white;
+            /* property duration shorthand */
+            transition: background-color 1s;
+            /*property duration */
+            /*transition-property: background-color;*/
+            /*transition-duration: 1s;*/
+        }
+        
+        .first-div:hover {
+            background-color: cornflowerblue;
+            color: darkorange;
+        }
+        
+        .second-div {
+            background-color: mediumpurple;
+            color: white;
+        }
+        
+        .second-div:hover {
+            background-color: burlywood;
+            color: mediumpurple;
+            transition: all 2000ms ease-out;
+        }
+        
+        .third-div {
+            background-color: cornflowerblue;
+            color: white;
+        }
+        
+        .third-div:hover {
+            background-color: coral;
+            width: 300px;
+            height: 300px;
+            border-radius: 8px;
+            transition: all 2s ease-out;
+            margin: 2rem 2rem;
+        }
+        
+        .fourth-div {
+            background-color: darkorange;
+            color: white;
+        }
+        
+        .fourth-div:hover {
+            background-color: darkcyan;
+            transition: color 1s, background-color 2s;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="first-div">
+        This is my first DIV
+    </div>
+    
+    <div class="second-div">
+        This is my second DIV
+    </div>
+    
+    <div class="third-div">
+        This is my second DIV
+    </div>
+    
+    <div class="fourth-div">
+        This is my second DIV
+    </div>
+
+</body>
+</html>
